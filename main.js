@@ -26,6 +26,7 @@ function fishBtnClicked() {
   // Catch fish based on character
   if (character === 'steve') {
     // STEVE: Cod 70%, Salmon 20%, Tropical 5%, Puffer 5%
+    catchFish('0.7', '0.9', '0.95');
     let randNum = Math.random();
     if (randNum < 0.7) {
       numCod++;
@@ -46,6 +47,7 @@ function fishBtnClicked() {
     }
   } else if (character === 'alex') {
     // ALEX: Cod 10%, Salmon 10%, Tropical 30%, Puffer 50%
+    catchFish('0.1', '0.2', '0.5')
     let randNum = Math.random();
     if (randNum < 0.1) {
       numCod++;
@@ -65,4 +67,5 @@ function fishBtnClicked() {
       resultImg.src = 'img/Pufferfish.png';
     }
   }
+  function catchFish(cod, salmon, tropical, puffer)
 }
